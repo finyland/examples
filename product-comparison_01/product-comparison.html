@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/product-comparison.css">
+    <title>Product comparison</title>
+</head>
+<body>
+
+    <main>
+
+        <div class="product-comparison wrapper">
+            <div class="product-comparison__top-row">
+                <div class="product-comparison__specification-name">
+                    <form class="product-comparison__filter filter"
+                          mthod="get"
+                          action="/product-comparison.html">
+                        <div class="filter__info">
+                            <p class="filter__text">Для категорий</p>
+                            <object type="image/svg+xml"
+                                    data="svg/q.svg"
+                                    class="question-mark"
+                                    data-tooltip="<p><span>Подсказка</span> - 1</p><img src='img/tail.png' alt='tail'>">
+                                    <img
+                                    src="img/q.png">
+                            </object>
+                        </div>
+                        <div class="filter__select-the-category">
+                            <p>Смартфоны</p>
+                            <object type="image/svg+xml"
+                                    data="svg/black-arrow.svg">
+                                    <img
+                                    src="img/black-arrow.png">
+                            </object>
+                        </div>
+                        <input checked class="filter__radio" type="radio" name="characteristics" id="all-characteristics">
+                        <label for="all-characteristics">Все характеристики</label>
+                        <input class="filter__radio" type="radio" name="characteristics" id="only-differences">
+                        <label for="only-differences">Показать только различия</label>
+                    </form>
+                </div>
+                <div class="product-comparison__specification-values">
+                    <div class="product-comparison__product-1">
+                        <!-- .product -->
+                        <article class="product">
+                            <object type="image/svg+xml"
+                                    data="svg/close.svg"
+                                    class="product__close">
+                                    <img
+                                    src="img/close.png">
+                            </object>
+                            <div class="product__photo">
+                                <img src="img/iphone.png" alt="iphone">
+                            </div>
+                            <div class="product__info">
+                                <p class="product__category">Смартфоны</p>
+                                <p class="product__name">Apple iPhone 11 64 Gb (Gold)</p>
+                                <p class="product__price">49 999 ₽<span>60 999 ₽</span></p>
+                                <div class="product__buttons">
+                                    <div class="product__to-cart">
+                                        <object type="image/svg+xml"
+                                                data="svg/cart.svg"
+                                                class="product__hidden-icon">
+                                                <img
+                                                src="img/cart.png">
+                                        </object>
+                                        <p>В корзину</p>
+                                    </div>
+                                    <div class="product__order-call">
+                                        <object type="image/svg+xml"
+                                                data="svg/phone.svg"
+                                                class="product__phone-icon">
+                                                <img
+                                                src="img/phone.png">
+                                        </object>
+                                        <p>Купить в 1 клик</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="product-comparison__product-2">
+                        <article class="product">
+                            <object type="image/svg+xml"
+                                    data="svg/close.svg"
+                                    class="product__close">
+                                    <img
+                                    src="img/close.png">
+                            </object>
+                            <div class="product__photo">
+                                <img src="img/mi.png" alt="mi">
+                            </div>
+                            <div class="product__info">
+                                <p class="product__category">Смартфоны</p>
+                                <p class="product__name">Xiaomi Redmi Note 8 Pro (blue)</p>
+                                <p class="product__price">16 700 ₽<span>19 999 ₽</span></p>
+                                <div class="product__buttons">
+                                    <div class="product__to-cart">
+                                        <object type="image/svg+xml"
+                                                data="svg/cart.svg"
+                                                class="product__hidden-icon">
+                                                <img
+                                                src="img/cart.png">
+                                        </object>
+                                        <p>В корзину</p>
+                                    </div>
+                                    <div class="product__order-call">
+                                        <object type="image/svg+xml"
+                                                data="svg/phone.svg"
+                                                class="product__phone-icon">
+                                                <img
+                                                src="img/phone.png">
+                                        </object>
+                                        <p>Купить в 1 клик</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <div class="product-comparison__hr"></div>
+            <div class="product-comparison__row">
+                <div class="product-comparison__specification-name">
+                    
+                    <h3>Бонусные рубли</h3>
+                    <object type="image/svg+xml"
+                            data="svg/arrow-up.svg"
+                            class="product-comparison__hidden-arrow">
+                            <img
+                            src="img/arrow-up.png">
+                    </object>
+                    
+                </div>
+                <div class="product-comparison__specification-values">
+                    <div class="product-comparison__product-1">
+                        <div class="product-comparison__bonuses bonuses">
+                            <object type="image/svg+xml"
+                                    data="svg/bonuses.svg">
+                                    <img
+                                    src="img/bonuses.png">
+                            </object>
+                            <p>+ 2 000 бонусов</p>
+                        </div>
+                    </div>
+                    <div class="product-comparison__product-2">
+                        <div class="product-comparison__bonuses bonuses">
+                            <object type="image/svg+xml"
+                                    data="svg/bonuses.svg">
+                                    <img
+                                    src="img/bonuses.png">
+                            </object>
+                            <p>+ 1 000 бонусов</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-comparison__hr product-comparison__hidden-hr"></div>
+            <div class="product-comparison__row">
+                <div class="product-comparison__specification-name">
+                    
+                    <h3>Акции и специальные предложения</h3>
+                    <object type="image/svg+xml"
+                            data="svg/arrow-up.svg"
+                            class="product-comparison__hidden-arrow">
+                            <img
+                            src="img/arrow-up.png">
+                    </object>
+                    
+                </div>
+                <div class="product-comparison__specification-values">
+                    <div class="product-comparison__product-1">
+                        <p class="product-comparison__value">Рассрочка</p>
+                    </div>
+                    <div class="product-comparison__product-2">
+                        <p class="product-comparison__value">Скидка 50% на наушники</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-comparison__hr product-comparison__hidden-hr"></div>
+            <div class="product-comparison__row">
+                <div class="product-comparison__specification-name">
+                    
+                    <h3>Наличие</h3>
+                    <object type="image/svg+xml"
+                            data="svg/arrow-up.svg"
+                            class="product-comparison__hidden-arrow">
+                            <img
+                            src="img/arrow-up.png">
+                    </object>
+                    
+                </div>
+                <div class="product-comparison__specification-values">
+                    <div class="product-comparison__product-1">
+                        <p class="product-comparison__value">В наличии</p>
+                    </div>
+                    <div class="product-comparison__product-2">
+                        <p class="product-comparison__value">От 3 до 5 дней</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-comparison__hr product-comparison__hidden-hr"></div>
+            <div class="product-comparison__row">
+                <div class="product-comparison__specification-name">
+                    <h3>Основные</h3>
+                    <object type="image/svg+xml"
+                            data="svg/arrow-up.svg"
+                            class="product-comparison__hidden-arrow">
+                            <img
+                            src="img/arrow-up.png">
+                    </object>   
+                </div>
+                <div class="product-comparison__specification-values">
+                    <div class="product-comparison__product-1">
+
+                    </div>
+                    <div class="product-comparison__product-2">
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-comparison__sub-row">
+                <div class="product-comparison__specification-name">
+                    <h4>Основные</h4>
+                    <h4 class="product-comparison__h4-hidden">Основные</h4> 
+                </div>
+                <div class="product-comparison__specification-values">
+                    <div class="product-comparison__product-1">
+                        <p class="product-comparison__value">Apple</p>
+                    </div>
+                    <div class="product-comparison__product-2">
+                        <p class="product-comparison__value">Apple</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-comparison__sub-row">
+                <div class="product-comparison__specification-name">
+                    <h4>Тип</h4><h4 class="product-comparison__h4-hidden">Тип</h4>   
+                </div>
+                <div class="product-comparison__specification-values">
+                    <div class="product-comparison__product-1">
+                        <p class="product-comparison__value">A13 Bionic</p>
+                    </div>
+                    <div class="product-comparison__product-2">
+                        <p class="product-comparison__value">A13 Bionic</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-comparison__hr product-comparison__hidden-hr"></div>
+            <div class="product-comparison__row">
+                <div class="product-comparison__specification-name">
+                    <h3>Экран</h3>
+                    <object type="image/svg+xml"
+                            data="svg/arrow-up.svg"
+                            class="product-comparison__hidden-arrow">
+                            <img
+                            src="img/arrow-up.png">
+                    </object>  
+                </div>
+                <div class="product-comparison__specification-values">
+                    <div class="product-comparison__product-1">
+
+                    </div>
+                    <div class="product-comparison__product-2">
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-comparison__sub-row">
+                <div class="product-comparison__specification-name">
+                    <h4>Диагональ (дюймов)</h4>
+                    <h4 class="product-comparison__h4-hidden">Диагональ (дюймов)</h4>
+                </div>
+                <div class="product-comparison__specification-values">
+                    <div class="product-comparison__product-1">
+                        <p class="product-comparison__value">5,8</p>
+                    </div>
+                    <div class="product-comparison__product-2">
+                        <p class="product-comparison__value">5,8</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-comparison__sub-row">
+                <div class="product-comparison__specification-name">
+                    <h4>Тип экрана</h4>
+                    <h4 class="product-comparison__h4-hidden">Тип экрана</h4> 
+                </div>
+                <div class="product-comparison__specification-values">
+                    <div class="product-comparison__product-1">
+                        <p class="product-comparison__value">Super Retina XDR</p>
+                    </div>
+                    <div class="product-comparison__product-2">
+                        <p class="product-comparison__value">Super Retina XDR</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-comparison__sub-row">
+                <div class="product-comparison__specification-name">
+                    <h4>Разрешение экрана</h4>
+                    <h4 class="product-comparison__h4-hidden">Разрешение экрана</h4>
+                </div>
+                <div class="product-comparison__specification-values">
+                    <div class="product-comparison__product-1">
+                        <p class="product-comparison__value">2436×1125 точек</p>
+                    </div>
+                    <div class="product-comparison__product-2">
+                        <p class="product-comparison__value">2436×1125 точек</p>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="product-comparison__hr product-comparison__hidden-hr"></div>
+            <div class="product-comparison__row">
+                <div class="product-comparison__specification-name">
+                    <h3>Камера</h3>
+                    <object type="image/svg+xml"
+                            data="svg/arrow-up.svg"
+                            class="product-comparison__hidden-arrow">
+                            <img
+                            src="img/arrow-up.png">
+                    </object>  
+                </div>
+                <div class="product-comparison__specification-values">
+                    <div class="product-comparison__product-1">
+
+                    </div>
+                    <div class="product-comparison__product-2">
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-comparison__sub-row">
+                <div class="product-comparison__specification-name">
+                    <h4>Количество основных камер</h4>
+                    <h4 class="product-comparison__h4-hidden">Количество основных камер</h4> 
+                </div>
+                <div class="product-comparison__specification-values">
+                    <div class="product-comparison__product-1">
+                        <p class="product-comparison__value">3</p>
+                    </div>
+                    <div class="product-comparison__product-2">
+                        <p class="product-comparison__value">3</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-comparison__sub-row">
+                <div class="product-comparison__specification-name">
+                    <h4>Разрешения основных камер</h4>
+                    <h4 class="product-comparison__h4-hidden">Разрешения основных камер</h4>  
+                </div>
+                <div class="product-comparison__specification-values">
+                    <div class="product-comparison__product-1">
+                        <p class="product-comparison__value">12 МПикс, 12 МПикс, 12 МПикс</p>
+                    </div>
+                    <div class="product-comparison__product-2">
+                        <p class="product-comparison__value">12 МПикс, 12 МПикс, 12 МПикс</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-comparison__sub-row">
+                <div class="product-comparison__specification-name">
+                    <h4>Функции основной камеры</h4>
+                    <h4 class="product-comparison__h4-hidden">Функции основной камеры</h4>
+                </div>
+                <div class="product-comparison__specification-values">
+                    <div class="product-comparison__product-1">
+                        <p class="product-comparison__value">Режим «Портрет», портретное освещение, оптическая стабилизация, вспышка True Tone, Focus Pixels</p>
+                    </div>
+                    <div class="product-comparison__product-2">
+                        <p class="product-comparison__value">Режим «Портрет», портретное освещение, оптическая стабилизация, вспышка True Tone, Focus Pixels</p>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="product-comparison__sub-row">
+                <div class="product-comparison__specification-name">
+                    <h4>Фронтальная камера</h4>
+                    <h4 class="product-comparison__h4-hidden">Фронтальная камера</h4> 
+                </div>
+                <div class="product-comparison__specification-values">
+                    <div class="product-comparison__product-1">
+                        <p class="product-comparison__value">есть</p>
+                    </div>
+                    <div class="product-comparison__product-2">
+                        <p class="product-comparison__value">есть</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-comparison__sub-row">
+                <div class="product-comparison__specification-name">
+                    <h4>Разрешение фронтальной камеры</h4>
+                    <h4 class="product-comparison__h4-hidden">Разрешение фронтальной камеры</h4> 
+                </div>
+                <div class="product-comparison__specification-values">
+                    <div class="product-comparison__product-1">
+                        <p class="product-comparison__value">12 МПикс</p>
+                    </div>
+                    <div class="product-comparison__product-2">
+                        <p class="product-comparison__value">12 МПикс</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-comparison__sub-row">
+                <div class="product-comparison__specification-name">
+                    <h4>Вспышка</h4>
+                    <h4 class="product-comparison__h4-hidden">Вспышка</h4>  
+                </div>
+                <div class="product-comparison__specification-values">
+                    <div class="product-comparison__product-1">
+                        <p class="product-comparison__value">есть, светодиодная</p>
+                    </div>
+                    <div class="product-comparison__product-2">
+                        <p class="product-comparison__value">есть, светодиодная</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-comparison__hr product-comparison__hidden-hr"></div>
+            <div class="product-comparison__row">
+                <div class="product-comparison__specification-name">
+                    <h3>Память</h3>
+                    <object type="image/svg+xml"
+                            data="svg/arrow-up.svg"
+                            class="product-comparison__hidden-arrow">
+                            <img
+                            src="img/arrow-up.png">
+                    </object> 
+                </div>
+                <div class="product-comparison__specification-values">
+                    <div class="product-comparison__product-1">
+
+                    </div>
+                    <div class="product-comparison__product-2">
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-comparison__sub-row">
+                <div class="product-comparison__specification-name">
+                    <h4>Встроенная память</h4>
+                    <h4 class="product-comparison__h4-hidden">Встроенная память</h4>  
+                </div>
+                <div class="product-comparison__specification-values">
+                    <div class="product-comparison__product-1">
+                        <p class="product-comparison__value">64 Гб</p>
+                    </div>
+                    <div class="product-comparison__product-2">
+                        <p class="product-comparison__value">64 Гб</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-comparison__hr product-comparison__hidden-hr"></div>
+            <div class="product-comparison__row">
+                <div class="product-comparison__specification-name">
+                    <h3>Питание</h3>
+                    <object type="image/svg+xml"
+                            data="svg/arrow-up.svg"
+                            class="product-comparison__hidden-arrow">
+                            <img
+                            src="img/arrow-up.png">
+                    </object>
+                </div>
+                <div class="product-comparison__specification-values">
+                    <div class="product-comparison__product-1">
+
+                    </div>
+                    <div class="product-comparison__product-2">
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-comparison__sub-row">
+                <div class="product-comparison__specification-name">
+                    <h4>Тип разъема для зарядки</h4>
+                    <h4 class="product-comparison__h4-hidden">Тип разъема зарядки</h4> 
+                </div>
+                <div class="product-comparison__specification-values">
+                    <div class="product-comparison__product-1">
+                        <p class="product-comparison__value">Lightning</p>
+                    </div>
+                    <div class="product-comparison__product-2">
+                        <p class="product-comparison__value">Lightning</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-comparison__sub-row">
+                <div class="product-comparison__specification-name">
+                    <h4>Функция быстрой зарядки</h4>  
+                    <h4 class="product-comparison__h4-hidden">Функция быстрой зарядки</h4>
+                </div>
+                <div class="product-comparison__specification-values">
+                    <div class="product-comparison__product-1">
+                        <p class="product-comparison__value">есть</p>
+                    </div>
+                    <div class="product-comparison__product-2">
+                        <p class="product-comparison__value">есть</p>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="product-comparison__sub-row">
+                <div class="product-comparison__specification-name">
+                    <h4>Функция беспроводной зарядки</h4>
+                    <h4 class="product-comparison__h4-hidden">Функция беспроводной зарядки</h4>  
+                </div>
+                <div class="product-comparison__specification-values">
+                    <div class="product-comparison__product-1">
+                        <p class="product-comparison__value">есть</p>
+                    </div>
+                    <div class="product-comparison__product-2">
+                        <p class="product-comparison__value">есть</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-comparison__hr product-comparison__hidden-hr"></div>
+            <div class="product-comparison__row">
+                <div class="product-comparison__specification-name">
+                    <h3>Подключение</h3>
+                    <object type="image/svg+xml"
+                            data="svg/arrow-up.svg"
+                            class="product-comparison__hidden-arrow">
+                            <img
+                            src="img/arrow-up.png">
+                    </object>
+                </div>
+                <div class="product-comparison__specification-values">
+                    <div class="product-comparison__product-1">
+
+                    </div>
+                    <div class="product-comparison__product-2">
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-comparison__sub-row">
+                <div class="product-comparison__specification-name">
+                    <div class="product-comparison__text-with-tip">
+                        <h4>Разъем Lightning 8 Pin</h4>
+                        <h4 class="product-comparison__h4-hidden">Разъем Lightning 8 Pin</h4>
+                        <object type="image/svg+xml"
+                                data="svg/q.svg"
+                                class="question-mark question-mark_hide"
+                                data-tooltip="<p><span>4500 мАч</span> - это примерно 30 часов активного использования устройства</p><img src='img/tail.png' alt='tail'>">
+                                <img
+                                src="img/q.png">
+                        </object>  
+                    </div> 
+                </div>
+                <div class="product-comparison__specification-values">
+                    <div class="product-comparison__product-1">
+                        <p class="product-comparison__value">есть</p>
+                    </div>
+                    <div class="product-comparison__product-2">
+                        <p class="product-comparison__value">есть</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-comparison__sub-row">
+                <div class="product-comparison__specification-name">
+                    <h4>Разъем для наушников</h4>
+                    <h4 class="product-comparison__h4-hidden">Разъем для наушников</h4>   
+                </div>
+                <div class="product-comparison__specification-values">
+                    <div class="product-comparison__product-1">
+                        <p class="product-comparison__value">Lightning</p>
+                    </div>
+                    <div class="product-comparison__product-2">
+                        <p class="product-comparison__value">Lightning</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <section class="product-comparison__subtittle">
+                <h2>
+                Смартфон Apple iPhone 11 64GB Black (MWLT2RU/A)
+                и
+                Смартфон Apple iPhone SE 2020 128GB Black (MXD02RU/A)
+                -
+                сравнение основных характеристик моделей
+                </h2>
+                <div class="product-comparison__buttons">
+                    <div class="product-comparison__button product-comparison__button_gray">
+                        <p class="product-comparison__value">Очистить список</p>
+                    </div>
+                    <div class="product-comparison__button">
+                        <object type="image/svg+xml"
+                                data="svg/back.svg">
+                                <img
+                                src="img/back.png">
+                        </object> 
+                        <p class="product-comparison__value">Назад к товарам</p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+        
+    </main>
+
+    <div id="tooltip"></div>
+
+    <script script src="jQuery/jQuery-3.6.0.compressed.js"></script>
+    <script src="js/product-comparison.js"></script>
+    
+</body>
+</html>
